@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilo.css" class="css">
+    <link rel="shortcut icon" href="img/calculadora.jpg" type="image/x-icon">
+    <title>Calculadora</title>
+</head>
+
+<style>
+    /* ----- Corpo ----- */
+    body {
+        background: rgb(241, 240, 240);
+    }
+
+    .row {
+        background: rgb(245, 245, 245);
+    }
+
+    /* ----- Botões ----- */
+    .botoes .col-3 {
+        text-align: center;
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    .teste {
+        background: rgb(241, 240, 240);
+    }
+
+    .botoes .col-3:hover,
+    .botoes .col-6:hover {
+        background: rgb(126, 213, 221);
+    }
+
+    .botoes .col-6 {
+        text-align: center;
+        cursor: pointer;
+        transition: .3s;
+        background: rgb(162, 236, 243);
+    }
+
+    /* ----- Celular   ----- */
+    @media (max-width: 767.98px) {
+
+        .botoes .col-3,
+        .botoes .col-6 {
+            padding: 6vw 0;
+            font-size: 2em;
+        }
+    }
+
+    /* ----- Tablet ----- */
+    @media (min-width: 768px) and (max-width: 991.98px) {
+
+        .botoes .col-3,
+        .botoes .col-6 {
+            padding: 4vw 0;
+            font-size: 3em;
+        }
+    }
+
+    /* ----- Computador / Notebook ----- */
+    @media (min-width: 992px) {
+
+        .botoes .col-3,
+        .botoes .col-6 {
+            padding: 2.5vw 0;
+            font-size: 2vw;
+        }
+
+        .visor {
+            font-size: 6em !important;
+        }
+    }
+
+    /* ----- Visor ----- */
+    .visor {
+        background: #1DABB8;
+        max-width: 100%;
+        text-overflow: clip ellipsis;
+        font-size: 5em;
+        text-align: right;
+        padding: 0 15px;
+    }
+</style>
+
+<body>
+    <div class="col-xs-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-4 offset-lg-4 shadow-lg">
+        <div class="row botoes">
+            <div class="col-12 visor text-truncate">
+                <p>0</p>
+            </div>
+            <!-- Linha 1 -->
+            <div class="col-3" id="clear">C</div>
+            <div class="col-3" id="r">R</div>
+            <div class="col-3" id="%">%</div>
+            <div class="col-3 teste" id="/">/</div>
+            <!-- Linha 2 -->
+            <div class="col-3" id="7">7</div>
+            <div class="col-3" id="8">8</div>
+            <div class="col-3" id="9">9</div>
+            <div class="col-3 teste" id="x">x</div>
+            <!-- Linha 3 -->
+            <div class="col-3" id="4">4</div>
+            <div class="col-3" id="5">5</div>
+            <div class="col-3" id="6">6</div>
+            <div class="col-3 teste" id="+">+</div>
+            <!-- Linha 4 -->
+            <div class="col-3" id="1">1</div>
+            <div class="col-3" id="2">2</div>
+            <div class="col-3" id="3">3</div>
+            <div class="col-3 teste" id="-">-</div>
+            <!-- Linha 5 -->
+            <div class="col-3" id="0">0</div>
+            <div class="col-3" id=".">.</div>
+            <div class="col-6" id="=">=</div>
+        </div>
+    </div>
+</body>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="calculadora/controle/calcular.js"></script>
+
+</html>
