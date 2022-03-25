@@ -1,12 +1,12 @@
 # Calculadora
 Um sistema simples de calculo, desenvolvido apenas para treino pessoal. Projeto criado em 2019.
 
-Deploy do projeto: https://viniciuslima21.github.io/calculadora/
+Deploy do projeto: https://viniciuslimaan.github.io/calculadora/
 
 Para utilizar o programa use: 
 
 ```
-git clone https://github.com/viniciuslima21/calculadora.git
+git clone https://github.com/viniciuslimaan/calculadora.git
 ```
 
 ## Tecnologias utilizadas
